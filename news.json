@@ -1,22 +1,110 @@
 [
   {
-    "c": "World",
-    "a": 0,
-    "m": 5,
-    "h": 2,
-    "img": "",
-    "t": "Eleven Nations Sign a Landmark Pact to Protect the High Seas",
-    "x": "After nine years of talks, a coalition of coastal states agrees to shared limits on fishing and deep-sea mining beyond national waters.",
-    "p": "The agreement creates a network of protected zones covering nearly a third of international waters.|Negotiators described the final text as a compromise with phased timelines.|Enforcement remains the open question as satellite tracking becomes mandatory."
+    "id": "art-1",
+    "category": "World",
+    "author": "Maya Lindqvist",
+    "authorBio": "Foreign correspondent covering international diplomacy and climate policy.",
+    "readTime": 6,
+    "date": "2 hours ago",
+    "featured": true,
+    "trending": true,
+    "image": "",
+    "title": "Eleven Nations Sign a Landmark Pact to Protect the High Seas",
+    "excerpt": "After nine years of negotiations, a coalition of coastal states agrees to shared limits on deep-sea mining and industrial fishing.",
+    "paragraphs": [
+      "The agreement, signed after an overnight session, establishes a network of marine sanctuaries covering nearly a third of international waters.",
+      "Negotiators described the final text as a practical compromise. Fishing fleets receive a phased transition timeline, while deep-sea mining proposals face independent environmental review.",
+      "Enforcement remains the central test. Mandatory satellite tracking will monitor commercial vessels, though individual member states remain responsible for policing their own flags."
+    ]
   },
   {
-    "c": "Technology",
-    "a": 1,
-    "m": 6,
-    "h": 4,
-    "img": "",
-    "t": "Inside the Race to Run Powerful AI Entirely on Your Phone",
-    "x": "Smaller models and faster chips promise assistants that work offline and keep your data off the cloud.",
-    "p": "Compact models are changing how phones handle translation, voice notes, and summaries.|Dedicated neural hardware makes local processing faster and more power-efficient.|Privacy remains a key draw since sensitive text stays on the device."
+    "id": "art-2",
+    "category": "Technology",
+    "author": "Dev Anand",
+    "authorBio": "Technology editor covering semiconductors, AI infrastructure, and digital privacy.",
+    "readTime": 5,
+    "date": "4 hours ago",
+    "featured": true,
+    "trending": true,
+    "image": "",
+    "title": "Inside the Race to Run Powerful AI Entirely on Your Phone",
+    "excerpt": "Smaller language models and dedicated neural chips promise fast assistants that work offline without sending data to the cloud.",
+    "paragraphs": [
+      "For years, capable AI models required massive cloud data centers. A new wave of compact architectures is shifting that balance toward local hardware.",
+      "Chipmakers are expanding neural processing units so smartphones can summarize documents, transcribe audio, and translate speech without an internet connection.",
+      "Privacy advocates welcome the shift, noting that keeping personal context on-device reduces exposure to data breaches."
+    ]
+  },
+  {
+    "id": "art-3",
+    "category": "Business",
+    "author": "Elise Moreau",
+    "authorBio": "Business reporter focusing on global trade, labor markets, and corporate strategy.",
+    "readTime": 7,
+    "date": "6 hours ago",
+    "featured": true,
+    "trending": false,
+    "image": "",
+    "title": "The Four-Day Workweek Gets Its First Real Stress Test",
+    "excerpt": "A year into large-scale corporate trials, productivity holds steady—but managers say cutting unnecessary meetings is the hardest part.",
+    "paragraphs": [
+      "Companies participating in the twelve-month trial reported lower staff turnover and fewer sick days while maintaining baseline revenue targets.",
+      "The sharpest adjustment was cultural. Teams eliminated recurring status calls, relied on written updates, and protected shared focus blocks.",
+      "Economists caution that results from office-based firms may not translate easily to hospitals, logistics, or retail operations."
+    ]
+  },
+  {
+    "id": "art-4",
+    "category": "Sports",
+    "author": "Tomás Herrera",
+    "authorBio": "Sports columnist and tactical analyst.",
+    "readTime": 4,
+    "date": "8 hours ago",
+    "featured": false,
+    "trending": true,
+    "image": "",
+    "title": "A Fourth-Tier Club’s Improbable Run to the Cup Final",
+    "excerpt": "With a part-time squad and a modest budget, a small-town team has eliminated three top-flight giants.",
+    "paragraphs": [
+      "Their team captain still teaches high school mathematics during the week. After the semifinal whistle, he admitted nobody in the dressing room had slept properly for days.",
+      "Built on defensive organization and rehearsed set pieces, the squad has not conceded a goal from open play across six consecutive rounds.",
+      "Match tickets sold out in under ten minutes, prompting local businesses to extend hours for traveling supporters."
+    ]
+  },
+  {
+    "id": "art-5",
+    "category": "Culture",
+    "author": "Naomi Okafor",
+    "authorBio": "Culture critic exploring cinema, music, and digital subcultures.",
+    "readTime": 5,
+    "date": "1 day ago",
+    "featured": false,
+    "trending": true,
+    "image": "",
+    "title": "Why Analog Cameras and Vinyl Are Booming Among Gen Z",
+    "excerpt": "Film photography, paper notebooks, and physical records are finding devoted fans among people raised entirely online.",
+    "paragraphs": [
+      "Sales of 35mm film rolls have climbed steadily, and community darkroom workshops in major cities report multi-month waiting lists.",
+      "Psychologists suggest the appeal lies in deliberate friction: an object that requires patience feels more memorable than an infinite digital feed.",
+      "Even as prices rise, enthusiasts say the tactile ritual of owning and maintaining physical media is worth the cost."
+    ]
+  },
+  {
+    "id": "art-6",
+    "category": "Science",
+    "author": "Dr. Ines Falk",
+    "authorBio": "Science journalist with a doctorate in atmospheric and ocean physics.",
+    "readTime": 6,
+    "date": "1 day ago",
+    "featured": false,
+    "trending": false,
+    "image": "",
+    "title": "Scientists Map the Deep Ocean’s Hidden Seasonal Calendar",
+    "excerpt": "Long-term seafloor sensors reveal that the abyssal plain pulses with annual rhythms driven by nutrients sinking from above.",
+    "paragraphs": [
+      "For decades, the deep ocean floor was thought to be an unchanging desert. Multi-year sensor arrays now show distinct seasonal bursts of biological activity.",
+      "Every spring plankton bloom at the surface sends a slow cascade of organic matter downward, triggering weeks of feeding and reproduction miles below.",
+      "Understanding this cycle is vital for climate modeling, as warming surface waters could alter how efficiently the ocean locks away carbon."
+    ]
   }
 ]

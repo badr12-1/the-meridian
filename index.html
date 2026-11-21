@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Meridian — Independent global news, technology, business, science, and culture reporting.">
+  <title>The Meridian — News &amp; Analysis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem('meridian_theme') || 'light'; } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="util-bar">
+    <div class="container util-inner">
+      <span id="liveDate">Loading date...</span>
+      <span class="market-ticker">S&amp;P 500 +0.42% &bull; NASDAQ +0.71% &bull; EUR/USD 1.08</span>
+    </div>
+  </div>
+
+  <!-- Breaking News Ticker -->
+  <div class="breaking-bar">
+    <span class="breaking-label">BREAKING</span>
+    <div class="ticker-wrap">
+      <div class="ticker-track" id="breakingTrack"></div>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="#" class="brand" id="homeLink">The Meridian</a>
+      <nav class="main-nav" id="mainNav" aria-label="Primary Sections"></nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="searchToggle" aria-label="Toggle Search">Search</button>
+        <button type="button" class="icon-btn" id="savedToggle" aria-label="Saved Stories">Saved (<span id="savedCount">0</span>)</button>
+        <button type="button" class="icon-btn" id="themeToggle" aria-label="Toggle Dark Mode">Dark</button>
+      </div>
+    </div>
+    <div class="search-drawer" id="searchDrawer">
+      <div class="container">
+        <input type="search" id="searchInput" placeholder="Search headlines, topics, or authors..." aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Top AdSense Leaderboard Slot -->
+    <div class="ad-slot ad-leaderboard" aria-label="Advertisement">
+      <span>Advertisement — 728x90 Leaderboard (Insert AdSense Code Here)</span>
+    </div>
+
+    <!-- Hero Section: Lead Story + Top Stories Sidebar -->
+    <section class="hero-grid" id="heroSection"></section>
+
+    <!-- Latest News Feed with Category Tabs -->
+    <section class="feed-section" id="feedSection">
+      <div class="section-head">
+        <h2>Latest Stories</h2>
+        <div class="category-tabs" id="categoryTabs"></div>
+      </div>
+      <div class="articles-grid" id="articlesGrid"></div>
+      <p class="empty-msg" id="emptyMsg" hidden>No articles matched your search or selected category.</p>
+    </section>
+
+    <!-- In-Feed AdSense Banner -->
+    <div class="ad-slot ad-banner" aria-label="Advertisement">
+      <span>Advertisement — Responsive In-Feed Banner (Insert AdSense Code Here)</span>
+    </div>
+
+    <!-- Most Read Section -->
+    <section class="trending-section">
+      <h2>Most Read</h2>
+      <ol class="trending-list" id="trendingList"></ol>
+    </section>
+
+    <!-- Newsletter Box -->
+    <section class="newsletter-box">
+      <div>
+        <h2>The Week, Explained in Ten Minutes</h2>
+        <p>Get our essential briefing delivered every Monday morning. No spam, unsubscribe anytime.</p>
+      </div>
+      <form id="newsletterForm" novalidate>
+        <input type="email" id="newsletterEmail" placeholder="you@example.com" required aria-label="Email address">
+        <button type="submit">Subscribe</button>
+        <p class="form-msg" id="newsletterMsg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="brand">The Meridian</a>
+        <p class="footer-desc">Independent reporting and sharp analysis on the forces shaping our world.</p>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <div id="footerSections"></div>
+      </div>
+      <div>
+        <h4>About &amp; Legal</h4>
+        <button type="button" data-info="about">About Us</button>
+        <button type="button" data-info="editorial">Editorial Policy</button>
+        <button type="button" data-info="privacy">Privacy Policy</button>
+        <button type="button" data-info="contact">Contact Newsroom</button>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="#newsletterForm">Newsletter</a>
+        <a href="#feedSection">Latest Feed</a>
+      </div>
+    </div>
+    <div class="container copyright">
+      &copy; 2026 The Meridian Media. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Saved Articles Drawer -->
+  <div class="backdrop" id="backdrop"></div>
+  <aside class="saved-drawer" id="savedDrawer" aria-label="Saved Reading List">
+    <div class="drawer-head">
+      <h2>Reading List</h2>
+      <button type="button" id="closeSaved">Close</button>
+    </div>
+    <div id="savedList"></div>
+  </aside>
+
+  <!-- Full Article Reader Overlay -->
+  <div class="reader-overlay" id="readerOverlay" role="dialog" aria-modal="true" aria-label="Article Reader">
+    <div class="read-progress" id="readProgress"></div>
+    <div class="reader-bar">
+      <button type="button" id="closeReader">&larr; Back to News</button>
+      <div id="readerBookmarkSlot"></div>
+    </div>
+    <article class="reader-body" id="readerBody"></article>
+  </div>
+
+  <!-- Legal / Info Modal (Important for AdSense Approval) -->
+  <div class="info-modal" id="infoModal" role="dialog" aria-modal="true">
+    <div class="info-card">
+      <div class="drawer-head">
+        <h2 id="infoTitle">About</h2>
+        <button type="button" id="closeInfo">Close</button>
+      </div>
+      <div id="infoContent" class="info-text"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
