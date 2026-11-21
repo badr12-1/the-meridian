@@ -1,0 +1,22 @@
+[
+  {
+    "c": "World",
+    "a": 0,
+    "m": 5,
+    "h": 2,
+    "img": "",
+    "t": "Eleven Nations Sign a Landmark Pact to Protect the High Seas",
+    "x": "After nine years of talks, a coalition of coastal states agrees to shared limits on fishing and deep-sea mining beyond national waters.",
+    "p": "The agreement creates a network of protected zones covering nearly a third of international waters.|Negotiators described the final text as a compromise with phased timelines.|Enforcement remains the open question as satellite tracking becomes mandatory."
+  },
+  {
+    "c": "Technology",
+    "a": 1,
+    "m": 6,
+    "h": 4,
+    "img": "",
+    "t": "Inside the Race to Run Powerful AI Entirely on Your Phone",
+    "x": "Smaller models and faster chips promise assistants that work offline and keep your data off the cloud.",
+    "p": "Compact models are changing how phones handle translation, voice notes, and summaries.|Dedicated neural hardware makes local processing faster and more power-efficient.|Privacy remains a key draw since sensitive text stays on the device."
+  }
+]
